@@ -64,6 +64,7 @@ nav {
 .navOptions li {
     padding: 5px 15px;
     font-size: 1.2rem;
+    margin: .3rem;
 }
 
 header {
@@ -82,7 +83,8 @@ header {
     grid-column: 2;
     text-align: center;
     font-size: 1.5rem;
-
+    box-sizing: content-box;
+    width: max-content;
 }
 
 #titulo div {
@@ -90,6 +92,10 @@ header {
     margin-left: 33%;
     background-color: var(--color-fondo_titulos2);
     color: white;
+}
+h1{
+    font-size: 2.7rem;
+    padding: 5px 30px;
 }
 
 
@@ -109,8 +115,9 @@ header {
 }
 
 #About_Me p {
-    border-radius: 15px;
     background-color: var(--color-fondo_titulos3);
+    border-radius: 15px;
+    border: 3px solid var(--color-letra-VO);
     display: block;
     grid-row: 2;
     grid-column: 2;
@@ -119,18 +126,21 @@ header {
 }
 
 #About_Me div {
+    border: 3px solid var(--color-letra-VO);
+    box-shadow: 3px 3px 5px #000;
     font-weight: bold;
     grid-row: 2;
     grid-column: 2;
     height: 5vh;
     margin: auto;
-    margin-bottom: -1.5rem;
-    padding-top: .7rem;
+    margin-bottom: -1rem;
+    padding-top: .3rem;
     text-align: center;
-    width: 20%;
-    z-index: 100;
+    width: 15%;
 }
-
+#About_Me div:active{
+    box-shadow: none;
+}
 
 /* ----------------------------- menu Lenguajes ----------------------------- */
 
@@ -154,16 +164,19 @@ header {
     justify-content: space-around;
 
 }
-
+/* ---------------------------- Lenguajes normal ---------------------------- */
 #lenguajes li {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bolder;
     padding: .5rem;
-
 }
 
-#lenguajes li:hover {}
+/* --------------------------- lenguajes on :hover -------------------------- */
+
+#lenguajes li:hover {
+    
+}
 
 
 /* -------------------------------- Proyectos ------------------------------- */
