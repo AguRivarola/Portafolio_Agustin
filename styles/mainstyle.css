@@ -22,7 +22,8 @@ body {
     /* height: 50px;
     width: 150px; */
     transform: skew(-35deg);
-    box-shadow: 8px 8px 15px #fff;
+    box-shadow: 8px 5px 10px var(--color-fondo_titulos);
+    border-radius: 15px;
 }
 
 .titulo {
@@ -32,6 +33,9 @@ body {
     margin: auto;
     padding: 0.7rem;
     font-size: 1.7rem;
+}
+.oculto{
+    display: none;
 }
 
 /* ------------------------------ Nav y header ------------------------------ */
@@ -123,6 +127,8 @@ h1{
     grid-column: 2;
     height: 40vh;
     padding: 4rem;
+    font-size: 1.3rem;
+    text-align: justify;
 }
 
 #About_Me div {
@@ -164,19 +170,51 @@ h1{
     justify-content: space-around;
 
 }
+
 /* ---------------------------- Lenguajes normal ---------------------------- */
 #lenguajes li {
+    cursor: pointer;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bolder;
     padding: .5rem;
+
 }
 
+/* #lenguajes li::after {
+    background-color: var(--color-fondo_titulos);
+    transform: skew(-35deg);
+    width: 50vw;
+} */
 /* --------------------------- lenguajes on :hover -------------------------- */
-
-#lenguajes li:hover {
+/* #lenguajes li:hover{
+    background-color: var(--color-fondo_titulos);
+    transform: skew(-35deg);
+    width: 50vw;
+} */
+/* ------------------------ barras de progreso prueba ----------------------- */
+.progreso{
+    width: 200%;
+    margin-left: -50%;
     
 }
+.barra{
+    background-color: orange;
+    border-radius: 15px;
+}
+.l1 .barra{
+    width: 50%;
+}
+.l2 .barra{
+
+    width:45% ;
+}
+.l3 .barra{
+    width: 60%;
+}
+/* .progreso{
+    display: none;
+} */
 
 
 /* -------------------------------- Proyectos ------------------------------- */
