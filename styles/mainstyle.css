@@ -1,0 +1,194 @@
+/* ------------------------------ Generalidades ----------------------------- */
+:root,
+* {
+    box-sizing: border-box;
+    --color-letra-VO: #346141;
+    --color-fondo_titulos: #7CE69A;
+    --color-fondo_titulos2: #60B378;
+    --color-fondo_titulos3: #C4EACFE5;
+    margin: 0px;
+    padding: 0px;
+    color: var(--color-letra-VO);
+}
+
+body {
+    background-image: url(../img/View.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paralelogramo {
+    background-color: var(--color-fondo_titulos);
+    /* height: 50px;
+    width: 150px; */
+    transform: skew(-35deg);
+    box-shadow: 8px 8px 15px #fff;
+}
+
+.titulo {
+    background-color: var(--color-fondo_titulos3);
+    width: 30vw;
+    text-align: center;
+    margin: auto;
+    padding: 0.7rem;
+    font-size: 1.7rem;
+}
+
+/* ------------------------------ Nav y header ------------------------------ */
+
+nav {
+    grid-column: 1/4;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.logo {
+    background-color: var(--color-fondo_titulos1);
+    font-size: 1.2rem;
+    line-height: 0.2rem;
+    margin-left: 30px;
+    margin: 15px;
+
+}
+
+.navOptions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    list-style-type: none;
+}
+
+.navOptions li {
+    padding: 5px 15px;
+    font-size: 1.2rem;
+}
+
+header {
+    background-image: url(../img/IMG\ fondo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+#titulo {
+    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+#titulo div {
+    width: 70%;
+    margin-left: 33%;
+    background-color: var(--color-fondo_titulos2);
+    color: white;
+}
+
+
+/* -------------------------------- About Me -------------------------------- */
+
+#About_Me {
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* height: 300vh; */
+    margin: 5vh auto;
+}
+
+#About_Me h3 {
+    grid-column: 2;
+
+}
+
+#About_Me p {
+    border-radius: 15px;
+    background-color: var(--color-fondo_titulos3);
+    display: block;
+    grid-row: 2;
+    grid-column: 2;
+    height: 40vh;
+    padding: 4rem;
+}
+
+#About_Me div {
+    font-weight: bold;
+    grid-row: 2;
+    grid-column: 2;
+    height: 5vh;
+    margin: auto;
+    margin-bottom: -1.5rem;
+    padding-top: .7rem;
+    text-align: center;
+    width: 20%;
+    z-index: 100;
+}
+
+
+/* ----------------------------- menu Lenguajes ----------------------------- */
+
+#lenguajes {
+    margin: 15vh auto;
+    height: 50vh;
+    margin-top: 25vh;
+}
+
+#lenguajes h2 {
+    margin-bottom: 5vh;
+}
+
+#lenguajes ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    width: 25%;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#lenguajes li {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: .5rem;
+
+}
+
+#lenguajes li:hover {}
+
+
+/* -------------------------------- Proyectos ------------------------------- */
+
+#proyectos {
+    margin: auto;
+    height: 70vh;
+}
+
+#proyectos h2 {
+    /* width: 20%  ; */
+}
+
+.proyectos {
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.proyectos section {
+    background-color: var(--color-fondo_titulos3);
+    border-radius: 15px;
+    height: 60vh;
+    margin-top: 10vh;
+    width: 25vw;
+}
