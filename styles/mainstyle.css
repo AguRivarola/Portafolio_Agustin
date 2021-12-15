@@ -220,12 +220,16 @@ h1{
 /* -------------------------------- Proyectos ------------------------------- */
 
 #proyectos {
-    margin: auto;
+    margin: 15vh auto;
     height: 70vh;
 }
 
-#proyectos h2 {
-    /* width: 20%  ; */
+.proyectos h3 {
+    background-color: var(--color-fondo_titulos2);
+    border-radius: 15px 15px 0px 0px ;
+    color: var(--color-fondo_titulos1);
+    text-align: center;
+    margin: auto;
 }
 
 .proyectos {
@@ -242,4 +246,32 @@ h1{
     height: 60vh;
     margin-top: 10vh;
     width: 25vw;
+    overflow: hidden;
+}
+
+.proyectos div{
+    display: flex;
+    background-color: var(--color-fondo_titulos2);
+    border-radius: 0px 0px 15px 15px;
+    height: 14%;
+    margin-top: -1%;
+    justify-content: center;
+    align-items: center;
+}
+.proyectos a{
+    margin-bottom: 0px;
+    color: var(--color-letra-VO);
+
+    
+}
+
+iframe{
+    border: none;
+    /* zoom: .75;
+    -moz-transform: scale(.75);
+    -moz-transform-origin: 100% 100%;
+    -o-transform: scale(.75);
+    -o-transform-origin: 100% 100%;
+    -webkit-transform: scale(.75);
+    -webkit-transform-origin: 100% 100%; */
 }
