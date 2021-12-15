@@ -26,6 +26,10 @@ body {
     border-radius: 15px;
 }
 
+body .boton:active {
+    box-shadow: none;
+}
+
 .titulo {
     background-color: var(--color-fondo_titulos3);
     width: 30vw;
@@ -34,11 +38,16 @@ body {
     padding: 0.7rem;
     font-size: 1.7rem;
 }
-.oculto{
+
+.oculto {
     display: none;
 }
 
 /* ------------------------------ Nav y header ------------------------------ */
+a {
+    text-decoration: none;
+    width: 100%;
+}
 
 nav {
     grid-column: 1/4;
@@ -50,7 +59,7 @@ nav {
 }
 
 .logo {
-    background-color: var(--color-fondo_titulos1);
+    background-color: var(--color-fondo_titulos);
     font-size: 1.2rem;
     line-height: 0.2rem;
     margin-left: 30px;
@@ -97,9 +106,25 @@ header {
     background-color: var(--color-fondo_titulos2);
     color: white;
 }
-h1{
+
+h1 {
     font-size: 2.7rem;
     padding: 5px 30px;
+    order: 50;
+}
+
+.selfie {
+    position: absolute;
+    margin-top: -25vh;
+    margin-left: 42vw;
+    border: 3px solid var(--color-fondo_titulos2);
+}
+
+img {
+    width: 15vw;
+    height: 30vh;
+    border-radius: 50%;
+
 }
 
 
@@ -144,7 +169,8 @@ h1{
     text-align: center;
     width: 15%;
 }
-#About_Me div:active{
+
+#About_Me div:active {
     box-shadow: none;
 }
 
@@ -193,25 +219,30 @@ h1{
     width: 50vw;
 } */
 /* ------------------------ barras de progreso prueba ----------------------- */
-.progreso{
+.progreso {
     width: 200%;
     margin-left: -50%;
-    
+
 }
-.barra{
+
+.barra {
     background-color: orange;
     border-radius: 15px;
 }
-.l1 .barra{
+
+.l1 .barra {
     width: 50%;
 }
-.l2 .barra{
 
-    width:45% ;
+.l2 .barra {
+
+    width: 45%;
 }
-.l3 .barra{
+
+.l3 .barra {
     width: 60%;
 }
+
 /* .progreso{
     display: none;
 } */
@@ -225,11 +256,12 @@ h1{
 }
 
 .proyectos h3 {
-    background-color: var(--color-fondo_titulos2);
-    border-radius: 15px 15px 0px 0px ;
-    color: var(--color-fondo_titulos1);
+    background-color: var(--color-letra-VO);
+    border-radius: 15px 15px 0px 0px;
+    color: var(--color-fondo_titulos3);
     text-align: center;
     margin: auto;
+    font-size: 1.5rem;
 }
 
 .proyectos {
@@ -238,40 +270,50 @@ h1{
     flex-flow: row;
     list-style: none;
     justify-content: space-around;
+    overflow: hidden;
+    height: 110%;
 }
 
 .proyectos section {
     background-color: var(--color-fondo_titulos3);
     border-radius: 15px;
+    box-shadow: 3px 5px 5px var(--color-fondo_titulos2);
     height: 60vh;
     margin-top: 10vh;
     width: 25vw;
     overflow: hidden;
 }
 
-.proyectos div{
+.proyectos div {
     display: flex;
-    background-color: var(--color-fondo_titulos2);
+    background-color: var(--color-fondo_titulos3);
     border-radius: 0px 0px 15px 15px;
-    height: 14%;
+    height: 15%;
     margin-top: -1%;
     justify-content: center;
     align-items: center;
 }
-.proyectos a{
-    margin-bottom: 0px;
-    color: var(--color-letra-VO);
 
-    
+.proyectos a {
+    background-color: var(--color-fondo_titulos2);
+    border: 2px solid var(--color-letra-VO);
+    color: var(--color-letra-VO);
+    padding: 2px;
+    margin-bottom: 0px;
+    height: 50%;
+    width: 50%;
+    text-align: center;
 }
 
-iframe{
+iframe {
+    overflow: hidden;
     border: none;
-    /* zoom: .75;
+    /*zoom: .75;
     -moz-transform: scale(.75);
     -moz-transform-origin: 100% 100%;
     -o-transform: scale(.75);
     -o-transform-origin: 100% 100%;
     -webkit-transform: scale(.75);
-    -webkit-transform-origin: 100% 100%; */
+    -webkit-transform-origin: 100% 100%;
+    */
 }
