@@ -126,7 +126,12 @@ h1 {
     padding: 5px 30px;
     order: 50;
 }
-
+.secundario{
+    font-size: 2.7rem;
+    padding: 5px 30px;
+    order: 50;
+    display: none;
+}
 
 
 
@@ -416,4 +421,12 @@ iframe {
         width: 30%;
     }
     
+}
+@media screen and (max-width: 480px){
+    h1{
+        display: none;
+    }
+    .secundario{
+        display: block;
+    }
 }
