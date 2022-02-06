@@ -127,9 +127,6 @@ h1 {
     order: 50;
 }
 .secundario{
-    font-size: 2.7rem;
-    padding: 5px 30px;
-    order: 50;
     display: none;
 }
 
@@ -428,5 +425,8 @@ iframe {
     }
     .secundario{
         display: block;
+        font-size: 2.7rem;
+        padding: 5px 30px;
+        order: 50;
     }
 }
