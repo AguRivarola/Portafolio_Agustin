@@ -12,7 +12,7 @@
 
 <body>
     <div class="matrixContainer">
-        <canvas width="600" height="432vh" id="matrix"></canvas>
+        <canvas width="100%" height="432vh" id="matrix"></canvas>
     </div>
     <header>
         <nav class="navBar">
@@ -20,15 +20,18 @@
                 <div class="logo">Agustín Rivarola</div>
             </div>
             <div>
-                <ul class="navOptions">
-                    <li class="paralelogramo boton"> <a href="#proyectos">Proyectos</a></li>
-                    <li class="paralelogramo boton"> <a href="#About_Me">Curriculum</a></li>
-                    <li class="paralelogramo boton"> <a href="/files/AgusR_CV_Programador.pdf"
-                        target="_BLANK">Contacto</a></li>
-                    </ul>
+                <div class="paralelogramo navBtn">
+                    <img id="mobile-cta" class="mobile-menu" src="img/menu.svg" alt="Open Navigation">
                 </div>
-            </nav>
-            
+                <ul class="navOptions">
+                    <li class="paralelogramo boton"> <a href="#proyectos">Proyectos</a>
+                    <li class="paralelogramo boton"> <a href="#About_Me">Curriculum</a>
+                    <li class="paralelogramo boton"> <a href="/files/AgusR_CV_Programador.pdf"
+                            target="_BLANK">Contacto</a>
+                </ul>
+            </div>
+        </nav>
+
         <!-- <img src="./img/matrix.gif" alt="matrix" srcset="imagen recortada para ser responsive"> -->
         <div id="titulo">
             <h1 class="paralelogramo">FrontEnd Developer JR</h1>
@@ -37,58 +40,59 @@
     </header>
     <!--   Crear la pagina principal para mis trabajos de FrontEnd      -->
     <div id="About_Me">
-        <img src="./img/Selfie.jpg" alt="Agustín" class="selfie" srcset="">
         <h3 class="paralelogramo titulo">Agustín Rivarola</h3>
-        <p>Soy una persona con autonomía y destreza a la hora de
-            aprender, con espíritu emprendedor y compañerismo
-            nato, la cual busca desarrollarse profesionalmente en el
-            ámbito IT.</p>
+        <div class="info">
+            <p>Soy una persona con autonomía y destreza a la hora de
+                aprender, con espíritu emprendedor y compañerismo
+                nato, la cual busca desarrollarse profesionalmente en el
+                ámbito IT.</p>
+            <img src="./img/Selfie.jpg" alt="Agustín" class="selfie" srcset="">
+        </div>
         <div class="paralelogramo boton">Mi CV</div>
     </div>
     <div id="lenguajes">
         <h2 class="paralelogramo titulo">Lenguajes</h2>
         <ul>
-            <li class="paralelogramo lenguaje boton l1">Java</li>
+            <li class="paralelogramo lenguaje boton l1">Java
             <li class="paralelogramo progreso boton oculto l1">
                 <div class="barra">50% </div>
-            </li>
-            <li class="paralelogramo lenguaje boton l2">JS</li>
+
+            <li class="paralelogramo lenguaje boton l2">JS
             <li class="paralelogramo progreso boton oculto l2">
                 <div class="barra">45%</div>
-            </li>
-            <li class="paralelogramo lenguaje boton le3">Css</li>
+
+            <li class="paralelogramo lenguaje boton le3">Css
             <li class="paralelogramo progreso boton oculto l3">
                 <div class="barra">60%</div>
-            </li>
+
         </ul>
     </div>
     <div id="proyectos">
         <h2 class="paralelogramo titulo">Proyectos destacados:</h2>
-        <ul class="proyectos">
-            <!-- --------------------------- Nodo "li" al pedo --------------------------- -->
-            <li>
-                <section>
-                    <!-- <h3>Proyecto1</h3> -->
-                    <iframe src="./toDoLanding/index.html" width="100%" height="85% " allowfullscreen></iframe>
-                    <div><a href="./toDoLanding/index.html" target="_BLANK" class="paralelogramo boton">Ver Más</a>
-                    </div>
-                </section>
-            </li>
-            <li>
-                <section>
-                    <!-- <h3>Proyecto2</h3> -->
-                    <iframe src="./Pet_Shop/index.html" width="100%" height="85% " allowfullscreen></iframe>
-                    <div><a href="./Pet_Shop/index.html" target="_BLANK" class="paralelogramo boton">Ver Más</a></div>
-                </section>
-            </li>
-            <li>
-                <section>
-                    <!-- <h3>Proyecto3</h3> -->
-                    <iframe src="./Pet_Shop/index.html" width="100%" height="85% " allowfullscreen></iframe>
-                    <div><a href="./Pet_Shop/index.html" target="_BLANK" class="paralelogramo boton">Ver Más</a></div>
-                </section>
-            </li>
-        </ul>
+        <div class="proyectos">
+
+            <section>
+                <!-- <h3>Proyecto1</h3> -->
+                <iframe src="./toDoLanding/index.html" width="100%" height="85% " allowfullscreen></iframe>
+                <div><a href="./toDoLanding/index.html" target="_BLANK" class="paralelogramo boton">Ver Más</a>
+                </div>
+            </section>
+
+
+            <section>
+                <!-- <h3>Proyecto2</h3> -->
+                <iframe src="./Pet_Shop/index.html" width="100%" height="85% " allowfullscreen></iframe>
+                <div><a href="./Pet_Shop/index.html" target="_BLANK" class="paralelogramo boton">Ver Más</a></div>
+            </section>
+
+
+            <section>
+                <!-- <h3>Proyecto3</h3> -->
+                <iframe src="./Pet_Shop/index.html" width="100%" height="85% " allowfullscreen></iframe>
+                <div><a href="./Pet_Shop/index.html" target="_BLANK" class="paralelogramo boton">Ver Más</a></div>
+            </section>
+
+        </div>
     </div>
 
 
