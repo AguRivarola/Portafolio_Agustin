@@ -81,18 +81,6 @@ window.addEventListener('load', function () {
 /* -------------------------------------------------------------------------- */
 const btnCv = document.querySelector("#About_Me .boton")
 btnCv.addEventListener('click',function (e) {
-    window.open('/files/AgusRivarola_CV.pdf', '_blank');
+    window.open('/files/pdfEmbeded.html', '_blank');
 
 })
-
-const onClickExportar = function (evento) {
-    // html2canvas(document.querySelector('.meme')).then(canvas => {
-    //     var img = canvas.toDataURL('image/png');
-
-    //     var link = document.createElement('a');
-    //     link.download = 'meme.png';
-    //     link.href = img
-    //     link.click();
-    // })
-    alert("Hola")
-}
