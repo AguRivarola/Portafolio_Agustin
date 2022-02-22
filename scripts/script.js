@@ -61,7 +61,7 @@ window.addEventListener('load', function () {
 
         ctx.fillStyle = '#0f0';
         ctx.font = '15pt monospace';
-        
+
 
         ypos.forEach((y, ind) => {
             const text = String.fromCharCode(Math.random() * 128);
@@ -75,3 +75,24 @@ window.addEventListener('load', function () {
     setInterval(matrix, 50);
 
 });
+
+/* -------------------------------------------------------------------------- */
+/*                                    Mi CV                                   */
+/* -------------------------------------------------------------------------- */
+const btnCv = document.querySelector("#About_Me .boton")
+btnCv.addEventListener('click',function (e) {
+    window.open('/files/AgusRivarola_CV.pdf', '_blank');
+
+})
+
+const onClickExportar = function (evento) {
+    // html2canvas(document.querySelector('.meme')).then(canvas => {
+    //     var img = canvas.toDataURL('image/png');
+
+    //     var link = document.createElement('a');
+    //     link.download = 'meme.png';
+    //     link.href = img
+    //     link.click();
+    // })
+    alert("Hola")
+}
