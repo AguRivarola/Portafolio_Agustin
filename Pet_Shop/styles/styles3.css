@@ -9,6 +9,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    height: fit-content;
+    box-sizing: border-box;
 }
 
 * {
@@ -246,33 +248,40 @@ input:focus, textarea:focus{
 }
 
 /*              ======= footer =======                   */
+footer {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 #subscribe {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    justify-content: space-between;
-    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
 }
 
 #subscribe span {
-    font-size: 1.5em;
-    font-weight: 700;
-    color: var(--marron);
-    text-align: center;
-    padding: 1.3em;
+    grid-column: 1;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 #subscribe form {
+    grid-column: 2;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-flow: row;
+    justify-content: space-around;
     align-items: center;
 }
 
-#subscribe input:first-child {
-    width: 35vw;
+#subscribe input[value="Subscribirse"]{
+    width: 33%;
+    height: 80%;
 }
-
+#mail_sub{
+    height: 80%;
+    width: 50%;
+}
 section#redes {
     background-color: var(--marron);
     display: flex;
@@ -350,7 +359,6 @@ footer>p {
 
 section#subscribe {
     background-color: var(--naranmarillo);
-    height: 6vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -443,6 +451,12 @@ section#subscribe {
         font-size: 2rem;
         z-index: 100;
     }
+
+    /* #mail_sub {
+        height: 50%;
+    } */
+
+    input[value="Subscribirse"] {}
 }
 
 @media screen and (max-width: 480px) {
@@ -513,12 +527,12 @@ section#subscribe {
         font-size: 1em;
         box-sizing: border-box;
     }
-    
+
     a {
         text-decoration: none;
         color: #ffff;
     }
-    
+
     header {
         align-items: center;
         background-color: #222222;
@@ -528,22 +542,22 @@ section#subscribe {
         box-sizing: border-box;
         padding: 5px 25px;
         font-size: 12px;
-    
+
     }
-    
+
     div.ofertas {
         order: 0;
     }
-    
+
     div.edit_page {
         order: 1;
-    
+
     }
-    
+
     h1 {
         font-size: 0%;
     }
-    
+
     /*          ====NAV====              */
     nav {
         background: var(--naranmarillo);
@@ -556,11 +570,11 @@ section#subscribe {
         box-sizing: border-box;
         padding: 20px 50px;
     }
-    
+
     div.logo_header {
         order: 0;
     }
-    
+
     div.categorias {
         order: 1;
         display: flex;
@@ -568,7 +582,7 @@ section#subscribe {
         justify-content: space-between;
         box-sizing: border-box;
     }
-    
+
     /*          ====Main====             */
     .banner {
         background-image: url(../images/bowl-and-pet-background\ 1.jpg);
@@ -578,9 +592,9 @@ section#subscribe {
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-    
+
     }
-    
+
     div.banner_text {
         height: 16vw;
         display: flex;
@@ -589,7 +603,7 @@ section#subscribe {
         align-items: center;
         margin: 0px 10vw;
     }
-    
+
     .banner_text :nth-child(1) {
         background-color: #fff;
         width: 30vw;
@@ -599,11 +613,11 @@ section#subscribe {
         padding: 10px;
         border-radius: 5px;
     }
-    
+
     .banner_text :nth-child(2) {
         margin: 3vw;
     }
-    
+
     .banner_text :nth-child(3) {
         background-color: var(--naranmarillo);
         color: #ffff;
@@ -612,42 +626,42 @@ section#subscribe {
         text-transform: capitalize;
         border-radius: 15px;
     }
-    
+
     section#productos {
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
         margin: 5vw;
-    
+
     }
-    
+
     #productos i {
         font-size: 13vw;
         -webkit-text-stroke: 0.6vw #F0A83E;
         color: rgba(0, 0, 0, 0);
     }
-    
+
     #productos h2 {
         font-size: 2.5rem;
         font-weight: bold;
     }
-    
+
     #productos div {
         display: flex;
     }
-    
+
     #productos a {
         color: gray;
     }
-    
+
     div.product_conteiner {
         display: flex;
         justify-content: space-around;
         width: 100%;
-    
+
     }
-    
+
     article {
         box-sizing: content-box;
         width: 23vw;
@@ -659,7 +673,7 @@ section#subscribe {
         border-radius: 15px;
         box-shadow: 5px 10px 15px rgba(200, 200, 200, 1);
     }
-    
+
     /* article img{
             margin: 7vw;
         width: 23vw;
@@ -668,35 +682,35 @@ section#subscribe {
     article>h3 {
         font-size: 2vw;
         font-weight: bold;
-    
+
     }
-    
+
     .money {
         color: var(--naranmarillo);
         margin: 2vw;
     }
-    
+
     /* ------------------------------------ FORM ----------------------------------- */
-    
+
     #form {
         margin: auto;
         box-sizing: content-box;
     }
-    
+
     #form>h2 {
         color: var(--marron);
         text-align: center;
         font-size: 2.3em;
         font-weight: bold;
     }
-    
+
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
-    
+
     input {
         background-color: var(--marron);
         border-radius: 15px;
@@ -706,13 +720,13 @@ section#subscribe {
         height: 3em;
         margin: 1.7vh;
     }
-    
+
     input::placeholder {
         color: #fff;
         font-size: 1em;
         text-align: center;
     }
-    
+
     /* Cuando se escribe cambia el color
     input:focus, textarea:focus{
         color: azure
@@ -721,23 +735,23 @@ section#subscribe {
         display: flex;
         justify-content: space-evenly;
     }
-    
+
     .form__btn--div input {
         box-sizing: content-box;
         width: 10vw;
         border-radius: 35px;
         height: 2.5em;
-    
+
     }
-    
+
     .form__btn-1 {
         background-color: gray;
     }
-    
+
     .form__btn-2 {
         background-color: var(--naranmarillo);
     }
-    
+
     /*              ======= footer =======                   */
     #subscribe {
         display: flex;
@@ -746,7 +760,7 @@ section#subscribe {
         justify-content: space-between;
         box-sizing: content-box;
     }
-    
+
     #subscribe span {
         font-size: 1.5em;
         font-weight: 700;
@@ -754,66 +768,66 @@ section#subscribe {
         text-align: center;
         padding: 1.3em;
     }
-    
+
     #subscribe form {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
     #subscribe input:first-child {
         width: 35vw;
     }
-    
+
     section#redes {
         background-color: var(--marron);
         display: flex;
         justify-content: space-between;
     }
-    
-    
+
+
     section#redes {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     div.f_left {
         display: flex;
         width: 30vw;
         justify-content: space-evenly;
     }
-    
+
     div.info {
-    
+
         box-sizing: content-box;
         width: 15vw;
         display: flex;
         flex-flow: column;
         justify-content: space-around;
     }
-    
+
     .info h3 {
         margin: 1vw 0%;
         color: ghostwhite;
         font-weight: bold;
         font-size: 1.2vw;
     }
-    
+
     .info p {
         color: gray;
-    
+
         margin: 1vw 0%;
     }
-    
+
     div.icons {
         order: -1;
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
     }
-    
+
     div.icons i {
         box-sizing: content-box;
         text-align: center;
@@ -827,11 +841,11 @@ section#subscribe {
         border-radius: 100%;
         box-shadow: 0px 0px 0px 1vw rgba(174, 174, 174, 0.4);
     }
-    
+
     footer div img {
         margin: 10vw 20vw;
     }
-    
+
     footer>p {
         background-color: #222222;
         color: #F3F3F3;
@@ -840,10 +854,10 @@ section#subscribe {
         font-size: 1vw;
         padding: 1vw;
     }
-    
+
     section#subscribe {
         background-color: var(--naranmarillo);
         height: 6vw;
     }
-    
+
 }
